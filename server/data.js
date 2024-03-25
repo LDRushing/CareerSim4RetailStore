@@ -4,94 +4,94 @@ const { createUser, createProduct } = require("./db");
 // Function to initialize dummy data
 const dummyData = async () => {
   try {
-    // Dummy User
+    // Lucy's User
     const user = await Promise.all([
       createUser({
-        first_name: "Example",
-        last_name: "One",
-        email: "example@gmail.com",
-        password: "12345",
+        first_name: "Ozzy",
+        last_name: "Valley",
+        email: "ozzynotreal@gmail.com",
+        password: "eggs",
       }),
     ]);
 
-    // Dummy Products
+    // Lucy's Products
     const products = await Promise.all([
       createProduct({
-        name: "laptop",
-        description: "High-performance laptop with a sleek design.",
-        price: 999.99,
+        name: "AD 10 1/2 Inch Wooden Easel for Arists",
+        description: "10.5 inch wooden easel for artists, released by AD Industries",
+        price: 30.00,
         imageUrl:
-          "https://m.media-amazon.com/images/I/51kK0BLesNL._AC_UF894,1000_QL80_.jpg",
+          "https://m.media-amazon.com/images/I/71Znw14AVEL._AC_SL1500_.jpg",
       }),
       createProduct({
-        name: "smartwatch",
-        description: "Fitness tracker with heart rate monitor and GPS.",
-        price: 199.99,
-        imageUrl: "https://m.media-amazon.com/images/I/71TIOhVWQ5L.jpg",
+        name: "AD Acrylic Paints Sets (36 Count)",
+        description: "Paints and brush set from AD Industries, released by AD Industries",
+        price: 20.00,
+        imageUrl: "https://m.media-amazon.com/images/I/71LpvzImoML._AC_SL1500_.jpg",
       }),
       createProduct({
-        name: "tablet",
-        description: "Portable tablet for entertainment and productivity.",
-        price: 299.99,
+        name: "MABB Hardcover Spiral Sketchbook (8.5'' X 11'')",
+        description: "Black hardcover sketchbook, 8/5 X 11 inches from MABB.",
+        price: 12.00,
         imageUrl:
-          "https://m.media-amazon.com/images/I/51YFNAqxKDL._AC_SY780_.jpg",
+          "https://media.istockphoto.com/id/481582684/photo/black-and-white-spiral-notebook-isolated.jpg?s=612x612&w=0&k=20&c=VUVO9gI-09R_HnpE3zxLnRLdUBkRxcFYA7tLTpYAJ_U=",
       }),
       createProduct({
-        name: "Smart LED Light",
-        description: "50ft Smart Led Strip Lights for Bedroom",
-        price: 13.99,
+        name: "MABB Colored Pencilset (150 Count)",
+        description: "Colored pencilset with black canvas case by MABB.",
+        price: 22,
         imageUrl:
-          "https://m.media-amazon.com/images/I/81mLzAeSdoL._AC_UF894,1000_QL80_.jpg",
+          "https://i5.walmartimages.com/seo/Colored-Pencil-Set-amp-Zippered-Case-150-Pkg-Assorted_37883bdc-1f67-4fb2-87d4-f9010d55a738_1.165f81dd1219474d645792048d8ca7e0.jpeg",
       }),
       createProduct({
-        name: "Power Bank",
-        description: "Portable Charger 26800mAh 22.5W Fast Charging Battery",
-        price: 32.99,
+        name: "AD Oil Soap (1 Gallon), for Oil Painters",
+        description: "One gallon jug of Oil Soap for painters, released by AD Industries",
+        price: 12.00,
         imageUrl:
-          "https://m.media-amazon.com/images/I/81D9rG8YbgL._AC_UF894,1000_QL80_.jpg",
+          "https://images.thdstatic.com/productImages/3c2aaf6b-8942-474e-9c3f-7a5cfaa1cf5e/svn/murphy-oil-soap-all-purpose-cleaners-61035074-66_600.jpg",
       }),
       createProduct({
-        name: "Beats Studio Buds",
+        name: "AD Wooden Painting Palette",
         description:
-          "True Wireless Noise Cancelling Earbuds, Enhanced Apple & Android",
-        price: 169.95,
+          "Wooden painting palette from AD Industries",
+        price: 10.00,
         imageUrl:
-          "https://m.media-amazon.com/images/I/51AN8ExPAVL._AC_UF894,1000_QL80_.jpg",
+          "https://thumbs.dreamstime.com/z/paint-palette-brush-isolated-white-43900876.jpg",
       }),
       createProduct({
-        name: "Portable Bluetooth Speaker",
-        description: "Portable Wireless Bluetooth 5.0 Speaker",
-        price: 44.99,
+        name: "AD Oil Paints Set (24 Count)",
+        description: "Oil paints set with 24 units, released by AD Industries",
+        price: 25.99,
         imageUrl:
-          "https://m.media-amazon.com/images/I/81-AAu018UL._AC_UF894,1000_QL80_.jpg",
+          "https://imgs.michaels.com/MAM/assets/1/5E3C12034D34434F8A9BAAFDDF0F8E1B/img/6FFA8E09B1A74ECB9847E5DAE482D66F/10622006_1.jpg?fit=inside|1280:1280",
       }),
       createProduct({
-        name: "GoPro HERO12 Black",
-        description: "Waterproof Action Camera with 5.3K60 Ultra HD Video",
-        price: 349.0,
+        name: "AD Watercolor Paints Set with Brush (8 Colors)",
+        description: "Water color paints set with 8 colors and 1 brush, from AD Industries",
+        price: 9.00,
         imageUrl:
-          "https://m.media-amazon.com/images/I/71p5V8+OnfL._AC_UF894,1000_QL80_.jpg",
+          "https://images.heb.com/is/image/HEBGrocery/003849543-2?jpegSize=150&hei=1400&fit=constrain&qlt=75",
       }),
       createProduct({
-        name: "Security Camera",
-        description: "Security Camera Outdoor Wired with Night Vision Color",
-        price: 31.99,
+        name: "TL 10 Inch X 12 Inch Drawing Tablet with Pen",
+        description: "10 IN X 12 IN drawing tablet with adjustable pen, released by Tallis-Liore",
+        price: 50.99,
         imageUrl:
-          "https://m.media-amazon.com/images/I/61c3t9sd5tL._AC_UF894,1000_QL80_.jpg",
+          "https://previews.123rf.com/images/rawpixel/rawpixel1711/rawpixel171105844/114714667-person-using-a-digital-drawing-tablet.jpg",
       }),
       createProduct({
-        name: "Neck Massager",
-        description: "Nekteck Shiatsu Deep Kneading Massage Pillow with Heat",
+        name: "TL On-Screen Drawing Tablet with Charging Cord",
+        description: "Drawing Tablet with Screen and matching pen and charging cord, by Tallis-Liore",
         price: 49.99,
         imageUrl:
-          "https://m.media-amazon.com/images/I/71TmeJpNJCL._AC_UF1000,1000_QL80_.jpg",
+          "https://www.artnews.com/wp-content/uploads/2022/09/AdobeStock_488384903.jpeg?w=1800",
       }),
       createProduct({
-        name: "Car Charger",
-        description: "Car Charger, 67W 3-Port Compact Fast Charger",
+        name: "MABB Charcoal Drawing Set with Kneaded Eraser",
+        description: "Charcoal drawing set with eraser, released by MABB",
         price: 39.99,
         imageUrl:
-          "https://m.media-amazon.com/images/I/61fcdbI0u7L._AC_UF894,1000_QL80_.jpg",
+          "https://images.ctfassets.net/f1fikihmjtrp/rj9qIXM4mN6Qlo7qvyOSA/7237d119986c3dfc5aef56572f86f1b5/20445-1009-3-3ww-l.jpg?fit=pad",
       }),
     ]);
 

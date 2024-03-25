@@ -75,7 +75,7 @@ app.get("/api/auth/me", isLoggedIn, async (req, res, next) => {
   }
 });
 
-// GET Users
+// GET Users. If I make changes in VSCode, it'll restart the server. 
 app.get("/api/users", async (req, res, next) => {
   try {
     res.send(await fetchUsers());
@@ -124,7 +124,7 @@ app.get("/api/users/:id/cart", isLoggedIn, async (req, res, next) => {
   }
 });
 
-// POST items in cart
+// POST items in cart. POST is in this route and isLoggedIn means that the user needs to be logged in. 
 app.post("/api/users/:id/cart", isLoggedIn, async (req, res, next) => {
   try {
     if (req.params.id !== req.user.id) {
