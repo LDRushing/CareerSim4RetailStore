@@ -2,7 +2,7 @@
 const pg = require("pg");
 // Create new client
 const client = new pg.Client(
-  process.env.DATABASE_URL || "postgres://localhost/e_commerce_db"
+  process.env.DATABASE_URL || "postgres://localhost/lucy_new_store_db"
 );
 // Import uuid
 const uuid = require("uuid");
